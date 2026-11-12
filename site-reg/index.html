@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="theme-reg.css?v=20261112f">
     <script src="script.js" defer></script>
     <script src="flow-demo.js?v=20261112b" defer></script>
-    <script src="hero-video.js" defer></script>
+    <script src="hero-video.js?v=watch" defer></script>
     <script src="header.js?v=20261112" defer></script>
     <script src="reveal.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/d3-array@3.2.4/dist/d3-array.min.js" defer></script>
@@ -38,13 +38,14 @@
         <div class="hero-stack">
         <section class="hero" id="top">
           <div class="hero-media">
-            <video class="hero-video" src="hero-preview-sber.mp4" poster="hero-preview-sber.jpg" autoplay muted loop playsinline preload="auto" aria-label="Видео о сервисе"></video>
+            <video class="hero-video" src="hero-preview-sber.mp4" poster="hero-preview-sber.jpg" data-full-src="hero-video.mp4" data-full-poster="hero-poster.jpg" autoplay muted loop playsinline preload="auto" aria-label="Видео о сервисе"></video>
           </div>
+          <button class="hero-close" type="button" data-action="close-video" hidden>Закрыть видео <span aria-hidden="true">✕</span></button>
           <div class="container hero-grid">
             <div class="hero-content">
               <h1>Специалисты из Индии <em class="h1-line">для предприятий:</em><br><span>от подбора до адаптации</span>
               </h1>
-              <div class="hero-actions"><div class="watch-wrap"><div class="watch-shadow" aria-hidden="true"></div><a class="button primary hero-cta" href="https://app.platform.rabota.ru/self-registration?source=landing" referrerpolicy="no-referrer" rel="noreferrer" data-registration="hero"><span class="glass-rim" aria-hidden="true"></span><span class="glass-shine" aria-hidden="true"></span>Зарегистрироваться <span aria-hidden="true"><svg class="arrow-icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg></span></a></div>
+              <div class="hero-actions"><div class="watch-wrap"><button class="hero-watch" type="button" data-action="watch-video"><span class="hero-watch-in"><span class="hero-play"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l12-7z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path></svg></span>Смотреть видео</span></button><div class="watch-shadow" aria-hidden="true"></div></div><div class="watch-wrap"><div class="watch-shadow" aria-hidden="true"></div><a class="button primary hero-cta" href="https://app.platform.rabota.ru/self-registration?source=landing" referrerpolicy="no-referrer" rel="noreferrer" data-registration="hero"><span class="glass-rim" aria-hidden="true"></span><span class="glass-shine" aria-hidden="true"></span>Зарегистрироваться <span aria-hidden="true"><svg class="arrow-icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg></span></a></div>
               </div>
               <p class="hero-description">Организуем поиск и проверку кандидатов, подготовку документов, переезд и сопровождение под потребность вашего предприятия
               </p>
